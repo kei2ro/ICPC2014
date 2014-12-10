@@ -1,0 +1,11 @@
+#include<stdio.h>
+int count = 0;
+
+int main(){
+  while(a != \n){
+	scanf("%c", &a);
+	count++;
+  }
+  printf("%d", count);
+  return 0;
+}

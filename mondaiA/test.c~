@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+  int a, b
+    int adddata;
+    scanf("%d %d", &a, &b);
+  adddata = add(a, b);
+  printf("%d\n", adddata);
+  return 0;
+}
+
+int add(int c, int d){
+  int addnow = c + d;
+  return addnow;
+}

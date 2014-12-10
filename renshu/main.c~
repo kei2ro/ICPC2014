@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+  int max = 0;
+  int a;
+  int input = -1;
+  while(input != 0){
+    input = scanf("%d", &a);
+    if(max < input){
+      max = input;
+    }
+  }
+  printf("%d", max);
+  return 0;
+}

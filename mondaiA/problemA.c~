@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main(){
+  int x, y;
+  double a, b;
+  double xtax, ytax;
+ int s;
+ int i, j;
+ int X, Y;
+ int max;
+ int newtax;
+ while(1){
+   if(x == 0 && y == 0 && s == 0){
+     break;
+   }
+   scanf("%d", &x);
+   scanf("%d", &y);
+   scanf("%d", &s);
+   xtax = (double)(100 + x) / 100;
+   ytax = (double)(100 + y) / 100;
+   max = 0;
+   for(i = 1;i < s;i++){
+     X = i * xtax;
+     for(j = 1;j < s;j++){
+       Y = j * xtax;
+       if(Y == s - X){
+	 a = i * ytax;
+	 printf("%f", i * ytax);
+	 b = j * ytax;
+	 newtax = a + b;
+	 if(max <= newtax){
+	   max = newtax;
+	   printf("%d %d %d     %d %d    %d %d\n", max, X, Y, i , j, a, b);
+	 }
+       }
+     }
+   }
+   printf("%d\n\n", max);
+ }
+ return 0;
+}
